@@ -28,5 +28,5 @@ class TicTacToe
     puts input.to_i.class
     return input.to_i - 1
   end
-  
+
 end
