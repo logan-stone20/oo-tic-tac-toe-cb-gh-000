@@ -114,4 +114,17 @@ class TicTacToe
     end
   end
 
+  def winner
+    if comb = won?()
+      if comb.all? { |e| @board[e] == "X" }
+        return "X"
+      elsif comb.all? { |e| @board[e] == "O" }
+        return "O"
+      end
+    else
+      return nil
+    end
+  end
+
+
 end
